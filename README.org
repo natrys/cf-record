@@ -1,0 +1,6 @@
+*** cf-record
+
+Manage records of a particular cloudflare zone using their API v4. You need to start with two pieces of information, to be provided in the form of environmental variables:
+
+- =CF_ZONE_ID=: You need to provide ID of the zone to manage. Deriving it, or for that matter managing zones is beyond the scope of this program.
+- =CF_ZONE_TOKEN=: You need to provide API token (not old style API key) with sufficient privilege to manage records.
