@@ -91,8 +91,8 @@ fn show_rec(records: &Vec<Entry>, filter: &str) -> Result<()> {
         };
         writeln!(
             &mut line,
-            "{}\t{}\t{}\t{}",
-            entry.r#type, entry.name, entry.content, entry.id
+            "{}\t{}\t{}",
+            entry.r#type, entry.name, entry.content
         )?;
         tw.write_all(&line.as_bytes())?;
         line.clear();
